@@ -1,0 +1,292 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raheny Counselling and Psychotherapy</title>
+    <style>
+    
+    <!--colours used:
+light blue: #00f2fe, darker blue: #4facfe
+light purple 1: #b064b0, darker purple: #764ba2
+lighter purple 2: #b87fb8 
+purple - linear-gradient(45deg, #b87fb8, #764ba2)
+blue - linear-gradient(45deg, #00f2fe, #4facfe) -->
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.5;
+            color: black;
+            background: linear-gradient(135deg, #b064b0 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .main-content {
+            background: #fefefe;
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-weight: normal;
+        }
+
+        h1 {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            color: black;
+            text-align: center;
+            font-size: 2.3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            color: black;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            <!-- border-bottom: 3px solid #667eea; -->
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        h5 {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            color: black;
+            font-size: 1.1rem;
+            margin: 15px 0 5px 0;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            font-size: 1.1rem;
+            color: black;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .logo img {
+            width: 200px;
+            height: auto;
+        }
+
+        .services-list {
+            margin: 20px;
+        }
+
+        .services-list ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            text-align: left;
+        }
+
+        .services-list li {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            margin-bottom: 7px;
+            font-size: 1rem;
+            font-weight: normal;
+            text-align: left;
+        }
+
+        .contact-info {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            font-weight: normal;
+            background: #4facfe;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-info h5 {
+            color: white;
+        }
+
+        .contact-info a {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            font-weight: normal;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+
+        .location-info {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            font-weight: normal;
+            background: #C22727;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.02);
+        }
+
+        .reviews-section {
+            background: #4facfe;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .reviews-section a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .reviews-section a:hover {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-style: italic;
+            color: #666;
+        }
+
+        .iacp-link {
+            color: #4facfe;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .iacp-link:hover {
+            color: #764ba2;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .main-content {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body dir="ltr" spellcheck="false" style="direction: ltr; min-height: 901px;" class="">
+    <div class="container">
+        <div class="main-content">
+            <div class="logo">
+                <img src="logo image.jpg" alt="Logo">
+            </div>
+            <h1>Raheny Counselling and Psychotherapy</h1>
+            
+            <h2>Siobhán Hegarty</h2><h2>Member of the British Association for Counselling and Psychotherapy (BACP)</h2><h2>Member of the Irish Association for Counselling and Psychotherapy (IACP)</h2>
+            <br>
+            <div class="subtitle">BACP and IACP             accredited Counsellor/Psychotherapist</div><div class="subtitle">BA in Integrative Counselling and Psychotherapy (First Class Honours, IICP College, Tallaght) </div><div class="subtitle">Diploma in Integrative Counselling and Psychotherapy </div><div class="subtitle">Certificate in Family Therapy</div><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Level 9 module in Creative Arts Therapy</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; M Phil in Creative Writing (Trinity College Dublin)</p><div class="subtitle"><br> <strong>In-Person or Zoom appointments available
+            </strong></div><strong>
+              
+            <div class="services-list">
+                <ul>
+                    <li>Individual counselling/psychotherapy&nbsp;</li>
+                    <li>Experience with autism</li>
+                    <li>Creative arts and expressive media approaches, including art therapy</li>
+                    <li>Our service provides you with a space that is safe, non-judgemental and inclusive</li><li>LGBTQ+ ally&nbsp;</li><li>Fees €90 (sessions last one hour)</li></ul><p><br></p><hr></div></strong><div class="services-list"><p style="text-align: center;">'There is a crack in everything / </p><p style="text-align: center;">That's how the light gets in'</p><p style="text-align: center;"><strong>- LEONARD COHEN</strong></p></div><div class="services-list"><hr></div><strong>
+
+            <div class="contact-info">
+                <center><h3>Contact:</h3></center>
+                <center><h4>If you are looking to start counselling/psychotherapy the <em>best way to contact me is via email</em>
+                <em><a href="mailto:rahenycounselling@gmail.com" target="_blank"> rahenycounselling@gmail.com </a></em></h4></center>
+                
+                <h4>
+                    <p><strong>Email:</strong>
+                        <a href="mailto:rahenycounselling@gmail.com" target="_blank"> rahenycounselling@gmail.com</a></p>
+                        
+                    <!-- this is a COMMENT, not code -->
+                    
+                    <!-- <strong>Phone: </strong>
+                        <a href="tel:0874500485" target="_blank">087 4500485</a></h4> -->
+                        
+                </h4><h4><strong> Facebook:</strong>
+                    <a href="https://www.facebook.com/profile.php?id=100086248312393" target="_blank">
+                        Raheny Counselling and Psychotherapy</a>
+                </h4>
+            </div><p><br></p>
+
+            <div class="location-info">
+                <em>A five-minute walk from Raheny DART Station</em>
+                <br><br>
+                <a href="https://share.google/IzfAmmOWR8sVPUJzS" style="color: white; text-decoration: none;" target="_blank">
+                    Station Rd, Raheny, Dublin 5
+                </a>
+            </div>
+
+            <div class="image-container">
+                <a href="https://maps.app.goo.gl/Szvhb7KtpepcYvb98">
+                    <img src="map image.jpg" alt="Raheny map" style="max-width: 600px;">
+                </a>
+            </div>
+
+            <div class="reviews-section">
+                <h3 style="margin-bottom: 15px;">Client Reviews:</h3>
+                <div class="image-container">
+                    <a href="https://g.page/r/CTMqVZFcCPZtEAE/review">
+                        <img src="reviews image.jpg" alt="Reviews" style="max-width: 700px;">
+                    </a>
+                </div>
+                <div style="margin-top: 15px;">
+                    <a href="https://www.google.com/maps/place/Raheny+Counselling+and+Psychotherapy/@53.3816669,-6.1757576,17z/data=!4m8!3m7!1s0x48670ffbe9a7269b:0x6df6085c91552a33!8m2!3d53.3816669!4d-6.1757576!9m1!1b1!16s%2Fg%2F11pq9l989y?entry=ttu&amp;g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D">
+                        Link to more reviews
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer">
+                <br>
+                <em>Last updated: 05/05/2026</em>
+            </div>
+        </strong></div></div><p><br></p></body></html>
